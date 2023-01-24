@@ -28,7 +28,7 @@ h1, h2, h3, ul, p {
 /* ---------------HEADER--------------- */
 
 .header {
-    border-bottom: 1px solid var(--cornflower);
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .container {
