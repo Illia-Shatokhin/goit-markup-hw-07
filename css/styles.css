@@ -32,10 +32,10 @@ h1, h2, h3, ul, p {
 }
 
 .container {
+    max-width: 1158px;
+    min-width: 320px;
+    padding: 0 15px;
     margin: 0 auto;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .flex {
@@ -150,8 +150,8 @@ h1, h2, h3, ul, p {
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 } 
 .hero-header {
     margin: 0 auto;
