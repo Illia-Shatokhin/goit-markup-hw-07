@@ -38,10 +38,6 @@ h1, h2, h3, ul, p {
     padding-right: 15px;
 }
 
-.flex {
-    display: flex;
-}
-
 .logo {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -152,7 +148,8 @@ h1, h2, h3, ul, p {
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
-} 
+}
+
 .hero-header {
     margin: 0 auto;
     max-width: 496px;
