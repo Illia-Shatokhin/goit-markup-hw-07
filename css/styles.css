@@ -106,6 +106,10 @@ img {
         line-height: 0;
         cursor: pointer;
     }
+
+    .menu-open-icon {
+        stroke: var(--navy-blue);
+    }
     
     .mobile-menu {
         position: fixed;
