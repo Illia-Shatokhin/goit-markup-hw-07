@@ -401,6 +401,7 @@ img {
         background-image: linear-gradient( rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)),
           url('../images/people-office-tablet.jpg');
+          padding: 112px 0 108px;
     }
 }
 
@@ -420,6 +421,7 @@ img {
         background-image: linear-gradient( rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)),
           url('../images/people-office-desktop.jpg');
+          padding: 188px 0;
     }
 }
 
@@ -435,6 +437,7 @@ img {
 }
 
 .hero-header {
+    max-width: 319px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -469,6 +472,7 @@ img {
 
 @media screen and (min-width: 768px) {
     .hero-header {
+        max-width: 496px;
         font-size: 56px;
         line-height: 1.07;
         margin-bottom: 40px;
@@ -477,8 +481,6 @@ img {
 
 @media screen and (min-width: 1200px) {
     .hero-header {
-        font-weight: 700;
-        letter-spacing: 0.02em;
         margin-bottom: 48px;
     }
 }
@@ -527,6 +529,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+    .third-header {
+        text-align: left;
+    }
     .features-list {
         display: flex;
         flex-wrap: wrap;
@@ -1235,13 +1240,11 @@ img {
     display: block;
     text-decoration: none;
     color: inherit;
-    border: 1px solid var(--cornflower);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition: border var(--trans), box-shadow var(--trans);
+    transition: box-shadow var(--trans);
 }
 
 .cards-anchor:hover, .cards-anchor:focus {
-    border: 0.5px solid var(--cloud);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -1277,6 +1280,14 @@ img {
 
 .cards-box {
     padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+    transition: border var(--trans)
+}
+
+.cards-box:hover, .cards-box:focus {
+    border: 0.5px solid var(--cloud);
+    border-top: none;
 }
 
 .cards-box .third-header {
@@ -1303,7 +1314,7 @@ img {
     .cards-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 72px 22px;
+        gap: 72px 24px;
     }
 }
 
@@ -1315,6 +1326,6 @@ img {
         margin-bottom: 72px;
     }
     .cards-list {
-        gap: 48px 21px;
+        gap: 48px 24px;
     }
 }
