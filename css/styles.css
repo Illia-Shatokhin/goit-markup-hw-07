@@ -133,7 +133,7 @@ img {
         pointer-events: none;
     }
     
-    .mobile-menu.is-open .mobile-menu {
+    .mobile-menu.is-open {
         transform: translateX(100%);
     } 
     
@@ -179,9 +179,6 @@ img {
         margin-top: 40px;
     }
     
-    .mobile-nav-list {
-    }
-    
     .mobile-nav-anchor {
         font-weight: 700;
         font-size: 36px;
@@ -205,19 +202,28 @@ img {
     }
     
     .mobile-address-anchor {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-    text-decoration: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--slate);
+        text-decoration: none;
     }
     
-    .mobile-address-anchor:hover, .mobile-address-anchor:focus {
+    .mobile-address-anchor-tel  {
         font-weight: 600;
-        font-size: 36px;
+        font-size: 8vw;
         line-height: 1.11;
         color: var(--iris);
+        text-transform: capitalize;
+        color: #4D5AE5;
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 428px) {
+        .mobile-address-anchor-tel {
+            font-size: 36px;
+        }
     }
     
     .mobile-soc-list {
